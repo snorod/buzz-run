@@ -16,6 +16,7 @@
 #define SPEED 5
 #define VOLUME 0.1
 
+Serial pc(USBTX,USBRX); // included for debugging accelerometer
 MMA8452 acc(p28, p27, 100000);
 uLCD_4DGL uLCD(p9,p10,p11); // serial tx, serial rx, reset pin;
 PwmOut jack(p23);
